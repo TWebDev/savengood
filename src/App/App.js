@@ -36,8 +36,13 @@ function App() {
       {Slider}
       <div className="container is-widescreen is-gapless has-background-primary has-shadow-1" data-depth='0.2'>
         <div className="columns">
-          <div className="column is-one-third has-background-info">
-
+          <div className="column is-one-quarter has-background-info">
+            <section className="section">
+              <div className="container">
+                <h1 className="title has-text-white is-size-2-desktop"><span>B</span>ook <span>n</span>ow!</h1>
+                <h1 className="has-text-white is-size-5">Get in contact with one of our agents and start travelling</h1>
+              </div>
+            </section>
           </div>
           <div className="column">
 
