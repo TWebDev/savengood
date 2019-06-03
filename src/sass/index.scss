@@ -1,0 +1,58 @@
+@charset 'utf-8';
+
+//Global assets
+$primary: #FFC34A;
+$info: #2682BF;
+$title-family: 'LoveloBlack';
+$title-outline: 'LoveloLineBold';
+$material-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+//Bulma 
+@import '../../node_modules/bulma/bulma.sass';
+//Bulma vars
+$navbar-background-color: $info;
+$navbar-box-shadow-size: $material-shadow;
+$navbar-height: 5rem;
+
+//Glide
+@import '../../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss';
+@import '../../node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss';
+@import '../../node_modules/@glidejs/glide/src/assets/sass/variables';
+
+//Mods
+@import './components/navbar';
+@import './components/titles';
+@import './ids.scss';
+
+.has-text-90s {
+  text-shadow: -4px 4px 0px $info, -6px 6px 0px $primary;
+}
+
+.has-text-shadow {
+  text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.is-size-0 {
+  font-size: 10rem;
+  text-align: center;
+}
+
+.has-shadow-1 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.has-shadow-2 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.has-shadow-3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.has-shadow-4 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.has-shadow-5 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
