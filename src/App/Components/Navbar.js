@@ -3,10 +3,10 @@ import SnV from '../../resources/images/logo/SnV_Logo_Line_Solid.png'
 
 const Navbar = () => {
 
-  const NavOptions = ['Cancun.','Cabo.','Vallarta.','Riviera Maya.'];
+  const NavOptions = ['Cancun.','Los Cabos.','Vallarta.','Riviera Maya.'];
 
   return (
-    <div className="Navbar">
+    <React.Fragment>
       <nav className="navbar is-spaced is-primary" role="navigation" aria-label="main navigation">
         <div className="container">
           <div className="navbar-brand">
@@ -16,7 +16,7 @@ const Navbar = () => {
           </div>
           <div className="navbar-menu">
             <div className="navbar-start">
-              { NavOptions.map((item) => 
+              {NavOptions.map((item) => 
                 <div className="navbar-item is-flex">
                   <p className="title has-text-black is-size-5">
                     {<span>{item.charAt(0)}</span>}{item.substring(1)}
@@ -36,7 +36,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </div>
+    </React.Fragment>
   );
 }
 

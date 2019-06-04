@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -318,7 +319,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Arial";
+  font-family: "Comfortaa", cursive;
 }
 
 code,
@@ -1065,7 +1066,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 }
 
 .is-family-primary {
-  font-family: "Arial" !important;
+  font-family: "Comfortaa", cursive !important;
 }
 
 .is-family-secondary {
@@ -9274,53 +9275,53 @@ label.panel-block:hover {
   cursor: -webkit-grabbing;
 }
 
-div.Navbar nav.navbar.is-spaced.is-primary {
+nav.navbar.is-spaced.is-primary {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
-div.Navbar nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-start div.navbar-item.is-flex {
+nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-start div.navbar-item.is-flex {
   flex-direction: column;
 }
-div.Navbar nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-start div.navbar-item.is-flex p.title.has-text-black.is-size-5 {
+nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-start div.navbar-item.is-flex p.title.has-text-black.is-size-5 {
   margin-bottom: 0;
   transition: 0.2s;
 }
-div.Navbar nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-start div.navbar-item.is-flex span#line {
+nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-start div.navbar-item.is-flex span#line {
   background-color: #2682BF;
   height: 0.2rem;
   transition: 0.2s;
   width: 0%;
 }
-div.Navbar nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-start div.navbar-item.is-flex:hover {
+nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-start div.navbar-item.is-flex:hover {
   cursor: pointer;
 }
-div.Navbar nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-start div.navbar-item.is-flex:hover p.title.has-text-black.is-size-5 {
+nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-start div.navbar-item.is-flex:hover p.title.has-text-black.is-size-5 {
   color: white !important;
 }
-div.Navbar nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-start div.navbar-item.is-flex:hover span#line {
+nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-start div.navbar-item.is-flex:hover span#line {
   background-color: #2682BF;
   height: 0.2rem;
   width: 100%;
 }
-div.Navbar nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-end div.navbar-item.is-flex {
+nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-end div.navbar-item.is-flex {
   flex-direction: column;
 }
-div.Navbar nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-end div.navbar-item.is-flex p.title.has-text-black.is-size-5 {
+nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-end div.navbar-item.is-flex p.title.has-text-black.is-size-5 {
   margin-bottom: 0;
   transition: 0.2s;
 }
-div.Navbar nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-end div.navbar-item.is-flex span#line {
+nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-end div.navbar-item.is-flex span#line {
   background-color: #2682BF;
   height: 0.2rem;
   transition: 0.2s;
   width: 0%;
 }
-div.Navbar nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-end div.navbar-item.is-flex:hover {
+nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-end div.navbar-item.is-flex:hover {
   cursor: pointer;
 }
-div.Navbar nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-end div.navbar-item.is-flex:hover p.title.has-text-black.is-size-5 {
+nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-end div.navbar-item.is-flex:hover p.title.has-text-black.is-size-5 {
   color: white !important;
 }
-div.Navbar nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-end div.navbar-item.is-flex:hover span#line {
+nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-end div.navbar-item.is-flex:hover span#line {
   background-color: #2682BF;
   height: 0.2rem;
   width: 100%;

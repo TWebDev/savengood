@@ -2,7 +2,7 @@ import React from 'react';
 
 const FloatingTitle = () => {
   return (
-    <div className="FloatingTitle">
+    <React.Fragment>
       <section className="hero">
         <div className="hero-body">
           <div className="container">
@@ -11,7 +11,7 @@ const FloatingTitle = () => {
           </div>
         </div>
       </section>
-    </div>
+    </React.Fragment>
   )
 }
 
