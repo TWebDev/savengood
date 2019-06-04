@@ -14,7 +14,7 @@ const Input = (props) => {
   return (
     <React.Fragment>
       <input 
-        className="input" 
+        className="input is-radiusless" 
         type={Type}
         name={Name}
         id={_Id} 

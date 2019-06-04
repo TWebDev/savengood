@@ -1,0 +1,27 @@
+div.field {
+  label.label {
+    color: $white;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  div.control {
+    input.input {
+      background-color: $primary;
+      border: 0;
+      border-bottom: 1px solid $blue !important;
+      box-shadow: none;
+      &:active {
+        box-shadow: none;
+      }
+      &:focus ~ .icon {
+        box-shadow: none;
+        color: $blue;
+      }
+    }
+    span.icon {
+      color: darken($primary, $amount: 30);
+      i {
+        
+      }
+    }
+  }
+}

@@ -9335,6 +9335,26 @@ nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-end div
   font-family: "LoveloLineBold";
 }
 
+div.field label.label {
+  color: white;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+div.field div.control input.input {
+  background-color: #FFC34A;
+  border: 0;
+  border-bottom: 1px solid #3273dc !important;
+  box-shadow: none;
+}
+div.field div.control input.input:active {
+  box-shadow: none;
+}
+div.field div.control input.input:focus ~ .icon {
+  box-shadow: none;
+  color: #3273dc;
+}
+div.field div.control span.icon {
+  color: #b07600;
+}
 #bg-image {
   z-index: -30;
   position: fixed;

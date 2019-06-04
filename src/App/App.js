@@ -6,6 +6,7 @@ import Glide from '@glidejs/glide';
 import Sea from '../resources/images/sea.jpg'
 import FloatingTitle from './Components/FloatingTitle';
 import SliderGlider from './Components/SliderGlider';
+import HeroForm from './Components/Form/HeroForm';
 
 function App() {
   window.addEventListener('load', () => {
@@ -24,6 +25,7 @@ function App() {
   const Nav = <Navbar></Navbar>;
   const Title = <FloatingTitle></FloatingTitle>;
   const Slider = <SliderGlider></SliderGlider>;
+  const heroForm = <HeroForm></HeroForm>;
 
   return (
     <React.Fragment>
@@ -45,7 +47,7 @@ function App() {
               </div>
               <div className="column">
                 <div className="section">
-
+                  {heroForm}
                 </div>
               </div>
             </div>
