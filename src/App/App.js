@@ -29,32 +29,30 @@ function App() {
 
   return (
     <React.Fragment>
-      <div className="App">
-        {Nav}
-        <div className="container is-widescreen is-gapless">
-          <div id="scene">
-            <div className="container" data-depth='0.5'>
-              {Title}
-            </div>
+      {Nav}
+      <div className="container is-widescreen is-gapless">
+        <div id="scene">
+          <div className="container" data-depth='0.5'>
+            {Title}
           </div>
-          {Slider}
-          <div className="has-background-primary has-shadow-1" data-depth='0.2'>
-            <div className="columns">
-              <div className="column is-one-quarter has-background-info">
-                <section className="section">
-                  <h1 className="title has-text-white has-text-shadow is-size-2-desktop"><span>B</span>ook <span>n</span>ow!</h1>
-                </section>
-              </div>
-              <div className="column">
-                <div className="section">
-                  {heroForm}
-                </div>
+        </div>
+        {Slider}
+        <div className="has-background-primary has-shadow-1" data-depth='0.2'>
+          <div className="columns">
+            <div className="column is-one-quarter has-background-info">
+              <section className="section">
+                <h1 className="title has-text-white has-text-shadow is-size-2-desktop"><span>B</span>ook <span>n</span>ow!</h1>
+              </section>
+            </div>
+            <div className="column">
+              <div className="section">
+                {heroForm}
               </div>
             </div>
           </div>
         </div>
-        <img className='is-overlay' id='bg-image' src={Sea} alt="Beach"/>
       </div>
+      <img className='is-overlay' id='bg-image' src={Sea} alt="Beach"/>
     </React.Fragment>
   );
 }

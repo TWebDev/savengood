@@ -1,0 +1,38 @@
+div.columns#dropdown {
+  div.column {
+    margin-top: 20px;
+
+    div.mc-field-group {
+      margin:0 5px;
+      label.label {
+        color: $white;
+        text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      }
+      div.select {
+        &:focus{
+          outline: none;
+        }
+        select {
+          background-color: $primary;
+          border: 0;
+          color: $white;
+          &:active {
+            box-shadow: none;
+          }
+          &:focus {
+            box-shadow: none;
+            border-color: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+  border-color: $white;
+}
+.select:not(.is-multiple):not(.is-loading):hover::after {
+  border-color: $blue;
+}
+

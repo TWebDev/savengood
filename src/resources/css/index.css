@@ -9338,6 +9338,7 @@ nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-end div
 div.field label.label {
   color: white;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-top: 0.8rem;
 }
 div.field div.control input.input {
   background-color: #FFC34A;
@@ -9355,6 +9356,40 @@ div.field div.control input.input:focus ~ .icon {
 div.field div.control span.icon {
   color: #b07600;
 }
+div.columns#dropdown div.column {
+  margin-top: 20px;
+}
+div.columns#dropdown div.column div.mc-field-group {
+  margin: 0 5px;
+}
+div.columns#dropdown div.column div.mc-field-group label.label {
+  color: white;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+div.columns#dropdown div.column div.mc-field-group div.select:focus {
+  outline: none;
+}
+div.columns#dropdown div.column div.mc-field-group div.select select {
+  background-color: #FFC34A;
+  border: 0;
+  color: white;
+}
+div.columns#dropdown div.column div.mc-field-group div.select select:active {
+  box-shadow: none;
+}
+div.columns#dropdown div.column div.mc-field-group div.select select:focus {
+  box-shadow: none;
+  border-color: none;
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+  border-color: white;
+}
+
+.select:not(.is-multiple):not(.is-loading):hover::after {
+  border-color: #3273dc;
+}
+
 #bg-image {
   z-index: -30;
   position: fixed;
