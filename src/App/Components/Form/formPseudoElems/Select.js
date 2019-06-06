@@ -10,7 +10,7 @@ const Select = (props) => {
   return (
     <React.Fragment>
       <div className="select">
-        <select className='is-radiusless has-text-white' name={Name} id={_Id}>
+        <select className='has-text-white' name={Name} id={_Id}>
           {Options.map((item) => 
             <option value={item}>{item}</option>  
           )}

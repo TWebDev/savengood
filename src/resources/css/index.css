@@ -9339,9 +9339,10 @@ div.field label.label {
   color: white;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   margin-top: 0.8rem;
+  background-color: none;
 }
 div.field div.control input.input {
-  background-color: #FFC34A;
+  background-color: transparent;
   border: 0;
   border-bottom: 1px solid #3273dc !important;
   box-shadow: none;
@@ -9370,15 +9371,17 @@ div.columns#dropdown div.column div.mc-field-group div.select:focus {
   outline: none;
 }
 div.columns#dropdown div.column div.mc-field-group div.select select {
-  background-color: #FFC34A;
+  background-color: #ffd47d;
   border: 0;
+  border-radius: 50px;
   color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 div.columns#dropdown div.column div.mc-field-group div.select select:active {
-  box-shadow: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 div.columns#dropdown div.column div.mc-field-group div.select select:focus {
-  box-shadow: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   border-color: none;
 }
 
@@ -9388,6 +9391,12 @@ div.columns#dropdown div.column div.mc-field-group div.select select:focus {
 
 .select:not(.is-multiple):not(.is-loading):hover::after {
   border-color: #3273dc;
+}
+
+div.columns div.column.is-one-quarter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #bg-image {

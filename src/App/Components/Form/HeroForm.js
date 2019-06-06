@@ -66,114 +66,111 @@ const HeroForm = (props) => {
   return (
     <React.Fragment>
       <div id="mc_embed_signup">
-      <form 
-        action="https://gmail.us20.list-manage.com/subscribe/post?u=db24a1644fed585d42738a06a&amp;id=c9bcbf0148"
-        method="post" 
-        id="mc-embedded-subscribe-form" 
-        name="mc-embedded-subscribe-form" 
-        class="validate" 
-        target="_blank"
-        novalidate
-      >
-        <div className="columns">
-          <div className="column">
-            <div className="mc-field-group">
-              <Fieldinput
-                Type='text'
-                Name='FNAME'
-                _Id='mce-FNAME'
-                Placeholder='Please enter your first name'
-                inputIcon={nameVal ? ('fas fa-user-check') : ('far fa-user')}
-                Value={formFieldSet.nameValue || ''}
-                formHandler={e => updateFormName(e)}
-              >
-                First Name
+        <form
+          action="https://gmail.us20.list-manage.com/subscribe/post?u=db24a1644fed585d42738a06a&amp;id=c9bcbf0148"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          class="validate"
+          target="_blank"
+          novalidate
+        >
+          <div className="columns">
+            <div className="column">
+              <div className="mc-field-group">
+                <Fieldinput
+                  Type='text'
+                  Name='FNAME'
+                  _Id='mce-FNAME'
+                  Placeholder='Please enter your first name'
+                  inputIcon={nameVal ? ('fas fa-user-check') : ('far fa-user')}
+                  Value={formFieldSet.nameValue || ''}
+                  formHandler={e => updateFormName(e)}
+                >
+                  First Name
               </Fieldinput>
-            </div>
-            <div className="mc-field-group">
-              <Fieldinput
-                Type='text'
-                Name='PHONE'
-                _Id='mce-PHONE'
-                Placeholder='123 456 7890'
-                inputIcon={phoneVal ? ('fas fa-mobile-alt') : ('fas fa-mobile')}
-                Value={formFieldSet.phoneValue || ''}
-                formHandler={e => updateFormPhone(e)}
-              >
-                Phone number
-              </Fieldinput>
-            </div>
-
-              <div className="columns" id='dropdown'>
-                <div className="column">
-                  <p className='is-small has-text-shadow'><strong className='has-text-white '>Best time to contact you?</strong></p>
-                </div>
-                <div className="column is-flex">
-                  <div className="mc-field-group">
-                    <Label>From:</Label>
-                    <Select
-                      Options={optionsFrom}
-                      Name='FSTHOUR'
-                      _Id='mce-FSTHOUR'
-                    >
-                    </Select>
-                  </div>
-                  <div className="mc-field-group">
-                    <Label>To:</Label>
-                    <Select
-                      Options={optionsTo}
-                      Name='FSTHOUR'
-                      _Id='mce-FSTHOUR'
-                    >
-                    </Select>
-                  </div>
-                </div>
               </div>
-          </div>
-          <div className="column">
-            <div className="mc-field-group">
-              <Fieldinput
-                Type='text'
-                Name='LNAME'
-                _Id='mce-LNAME'
-                Placeholder='Please enter your last name'
-                inputIcon={lastVal ? ('fas fa-user-check') : ('far fa-user')}
-                Value={formFieldSet.lastValue || ''}
-                formHandler={e => updateFormLast(e)}
-              >
-                Last Name
+              <div className="mc-field-group">
+                <Fieldinput
+                  Type='text'
+                  Name='PHONE'
+                  _Id='mce-PHONE'
+                  Placeholder='123 456 7890'
+                  inputIcon={phoneVal ? ('fas fa-mobile-alt') : ('fas fa-mobile')}
+                  Value={formFieldSet.phoneValue || ''}
+                  formHandler={e => updateFormPhone(e)}
+                >
+                  Phone number
               </Fieldinput>
+              </div>
             </div>
-            <div className="mc-field-group">
-              <Fieldinput
-                Type='text'
-                Name='EMAIL'
-                _Id='mce-EMAIL'
-                Placeholder='mail@mailme.com'
-                inputIcon={mailVal ? ('far fa-envelope') : ('far fa-envelope-open')}
-                Value={formFieldSet.emailValue || ''}
-                formHandler={e => updateFormEmail(e)}
-              >
-                e-mail
+            <div className="column">
+              <div className="mc-field-group">
+                <Fieldinput
+                  Type='text'
+                  Name='LNAME'
+                  _Id='mce-LNAME'
+                  Placeholder='Please enter your last name'
+                  inputIcon={lastVal ? ('fas fa-user-check') : ('far fa-user')}
+                  Value={formFieldSet.lastValue || ''}
+                  formHandler={e => updateFormLast(e)}
+                >
+                  Last Name
               </Fieldinput>
-            </div>
-            <div id="mce-responses" className="clear">
-              <div className="response" id="mce-error-response"></div>
-              <div className="response" id="mce-success-response"></div>
-            </div>
-            <div className="column clear">
-              <Button
-                addClass={validateForm()}
-                Type='submit'
-                Value='Subscribe'
-                _Id='mc-embedded-subscribe'
-              >
-                <p className='has-text-shadow'>Begin your booking</p>
-              </Button>
+              </div>
+              <div className="mc-field-group">
+                <Fieldinput
+                  Type='text'
+                  Name='EMAIL'
+                  _Id='mce-EMAIL'
+                  Placeholder='mail@mailme.com'
+                  inputIcon={mailVal ? ('far fa-envelope') : ('far fa-envelope-open')}
+                  Value={formFieldSet.emailValue || ''}
+                  formHandler={e => updateFormEmail(e)}
+                >
+                  e-mail
+              </Fieldinput>
+              </div>
+              <div id="mce-responses" className="clear">
+                <div className="response" id="mce-error-response"></div>
+                <div className="response" id="mce-success-response"></div>
+              </div>
             </div>
           </div>
-        </div>
-      </form>
+          <div className="columns" id='dropdown'>
+            <div className="column">
+              <p className='is-small has-text-shadow'><strong className='has-text-white '>Best time to contact you?</strong></p>
+            </div>
+            <div className="column is-flex">
+              <div className="mc-field-group">
+                <Label>From:</Label>
+                <Select
+                  Options={optionsFrom}
+                  Name='FSTHOUR'
+                  _Id='mce-FSTHOUR'
+                >
+                </Select>
+              </div>
+              <div className="mc-field-group">
+                <Label>To:</Label>
+                <Select
+                  Options={optionsTo}
+                  Name='FSTHOUR'
+                  _Id='mce-FSTHOUR'
+                >
+                </Select>
+              </div>
+            </div>
+          </div>
+          <Button
+            addClass={validateForm()}
+            Type='submit'
+            Value='Subscribe'
+            _Id='mc-embedded-subscribe'
+          >
+            <p className='has-text-shadow'>Begin your booking</p>
+          </Button>
+        </form>
       </div>
     </React.Fragment>
   )

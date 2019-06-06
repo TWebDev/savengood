@@ -13,14 +13,16 @@ div.columns#dropdown {
           outline: none;
         }
         select {
-          background-color: $primary;
+          background-color: lighten($primary, 10);
           border: 0;
+          border-radius: 50px;
           color: $white;
+          box-shadow: $material-shadow;
           &:active {
-            box-shadow: none;
+            box-shadow: $material-shadow;
           }
           &:focus {
-            box-shadow: none;
+            box-shadow: $material-shadow;
             border-color: none;
           }
         }

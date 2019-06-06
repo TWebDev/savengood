@@ -5,27 +5,25 @@ const SliderGlider = () => {
 
   return (
     <React.Fragment>
-      <div className="Slider">
-        <section className="hero">
-          <div className="hero-body">
-            <div className="glide">
-              <div className="glide__track" data-glide-el='track'>
-                <ul className="glide__slides">
-                  { heroSlides.map((item) => 
-                    <div className="glide__slide">
-                      <div className="container">
-                        <h1 className="title is-size-0 has-text-white has-text-shadow">
-                          <span>{item.charAt(0)}</span>{item.substring(1)}
-                        </h1>
-                      </div>
+      <section className="hero">
+        <div className="hero-body">
+          <div className="glide">
+            <div className="glide__track" data-glide-el='track'>
+              <ul className="glide__slides">
+                {heroSlides.map((item) => 
+                  <div className="glide__slide">
+                    <div className="container">
+                      <h1 className="title is-size-0 has-text-white has-text-shadow">
+                        <span>{item.charAt(0)}</span>{item.substring(1)}
+                      </h1>
                     </div>
-                  )}
-                </ul>
-              </div>
+                  </div>
+                )}
+              </ul>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </React.Fragment>
   )
 }
