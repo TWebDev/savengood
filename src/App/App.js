@@ -34,13 +34,13 @@ function App() {
     <React.Fragment>
       {Nav}
       <section className='hero'>
-        <section className="hero-body" id="scene">
+        <section className="hero-body is-hidden-touch is-hidden-desktop-only" id="scene">
           {Title}
         </section>
       </section>
       {Slider}
       <div className="container is-widescreen is-gapless">
-        <div className="columns">
+        <div className="columns is-marginless">
           <div className="column is-one-quarter">
             <section className="section">
               <h1 className="title has-text-white has-text-90s is-size-2-desktop"><span>B</span>ook <span>n</span>ow!</h1>
@@ -74,7 +74,7 @@ function App() {
       <section className="hero is-fullheight">
         <Popper></Popper>
       </section>
-      <img className='is-overlay' id='bg-image' src={Sea} alt="Beach"/>
+      <img className='is-overlay is-hidden-touch is-hidden-desktop-only' id='bg-image' src={Sea} alt="Beach"/>
     </React.Fragment>
   );
 }

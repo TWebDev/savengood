@@ -71,9 +71,9 @@ const HeroForm = (props) => {
           method="post"
           id="mc-embedded-subscribe-form"
           name="mc-embedded-subscribe-form"
-          class="validate"
+          className="validate"
           target="_blank"
-          novalidate
+          noValidate
         >
           <div className="columns">
             <div className="column">
@@ -92,7 +92,7 @@ const HeroForm = (props) => {
               </div>
               <div className="mc-field-group">
                 <Fieldinput
-                  Type='text'
+                  Type='tel'
                   Name='PHONE'
                   _Id='mce-PHONE'
                   Placeholder='123 456 7890'
@@ -120,7 +120,7 @@ const HeroForm = (props) => {
               </div>
               <div className="mc-field-group">
                 <Fieldinput
-                  Type='text'
+                  Type='email'
                   Name='EMAIL'
                   _Id='mce-EMAIL'
                   Placeholder='mail@mailme.com'

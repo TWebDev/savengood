@@ -9399,9 +9399,23 @@ div.columns div.column.is-one-quarter {
   justify-content: center;
 }
 
+div.is-flex#gallery {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+div.is-flex#gallery div.card {
+  margin: 20px;
+}
+
 #bg-image {
   z-index: -30;
   position: fixed;
+}
+
+body {
+  position: relative;
+  z-index: -50;
+  background-color: #FFC34A;
 }
 
 .has-text-90s {
@@ -9435,6 +9449,17 @@ div.columns div.column.is-one-quarter {
 
 .has-shadow-5 {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+@media screen and (max-width: 1216px) {
+  .is-size-0 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .section {
+    padding: 1rem 1rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

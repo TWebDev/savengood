@@ -12,7 +12,7 @@ const Select = (props) => {
       <div className="select">
         <select className='has-text-white' name={Name} id={_Id}>
           {Options.map((item) => 
-            <option value={item}>{item}</option>  
+            <option key={item} value={item}>{item}</option>  
           )}
         </select>
       </div>

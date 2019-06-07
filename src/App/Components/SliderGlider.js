@@ -11,7 +11,7 @@ const SliderGlider = () => {
             <div className="glide__track" data-glide-el='track'>
               <ul className="glide__slides">
                 {heroSlides.map((item) => 
-                  <div className="glide__slide">
+                  <div className="glide__slide" key={item}>
                     <div className="container">
                       <h1 className="title is-size-0 has-text-white has-text-shadow">
                         <span>{item.charAt(0)}</span>{item.substring(1)}

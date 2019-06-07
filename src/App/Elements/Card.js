@@ -3,11 +3,14 @@ import React from 'react';
 const Card = (props) => {
   let
   {
-    Ratio
+    Ratio,
+    Source,
+    Alt,
+    children
   } = props;
   return ( 
     <React.Fragment>
-      <div className="card">
+      <div className='card has-shadow-3 has-text-90s has-background-primary'>
         <div className="card-image">
           <figure className={`image ${Ratio}`}>
             <img src={Source} alt={Alt}/>

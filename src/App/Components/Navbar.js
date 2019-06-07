@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <React.Fragment>
-      <nav className="navbar is-spaced is-primary" role="navigation" aria-label="main navigation">
+      <nav className="navbar is-spaced is-primary is-hidden-touch is-hidden-desktop-only" role="navigation" aria-label="main navigation">
         <div className="container">
           <div className="navbar-brand">
             <span className="navbar-item" href="/">
@@ -17,7 +17,7 @@ const Navbar = () => {
           <div className="navbar-menu">
             <div className="navbar-start">
               {NavOptions.map((item) => 
-                <div className="navbar-item is-flex">
+                <div className="navbar-item is-flex" key={item}>
                   <p className="title has-text-black is-size-5">
                     {<span>{item.charAt(0)}</span>}{item.substring(1)}
                   </p>
