@@ -4,7 +4,7 @@ import Select from './formPseudoElems/Select';
 import Label from './formPseudoElems/Label';
 import Button from '../../Elements/Button';
 import { connect } from 'react-redux';
-import * as actions from '../../../redux/actions';
+import * as actions from '../../../redux/actions/index';
 
 const HeroForm = (props) => {
 
@@ -155,8 +155,8 @@ const HeroForm = (props) => {
                 <Label>To:</Label>
                 <Select
                   Options={optionsTo}
-                  Name='FSTHOUR'
-                  _Id='mce-FSTHOUR'
+                  Name='LSTHOUR'
+                  _Id='mce-LSTHOUR'
                 >
                 </Select>
               </div>

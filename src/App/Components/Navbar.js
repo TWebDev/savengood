@@ -3,7 +3,7 @@ import SnV from '../../resources/images/logo/SnV_Logo_Line_Solid.png'
 
 const Navbar = () => {
 
-  const NavOptions = ['Cancun.','Los Cabos.','Vallarta.','Riviera Maya.'];
+  const NavOptions = [''];
 
   return (
     <React.Fragment>
@@ -24,14 +24,6 @@ const Navbar = () => {
                   <span id='line'></span>
                 </div>
               )}
-            </div>
-            <div className="navbar-end">
-              <div className="navbar-item is-flex">
-                <p className="title has-text-black is-size-5">
-                  <span>C</span>ontact Us.
-                </p>
-                <span id='line'></span>
-              </div>
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ const Popper = () => {
   window.addEventListener('scroll', () => {
     var popper = document.getElementById('popper'),
         bounding = popper.getBoundingClientRect().top;
-    if (bounding == 0) {
+    if (bounding === 0) {
       console.log('estoy en vista');
     } 
   })

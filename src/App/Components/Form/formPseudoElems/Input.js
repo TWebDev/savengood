@@ -5,21 +5,20 @@ const Input = (props) => {
   {
     Type,
     Name,
-    _Id,
     Placeholder,
+    formHandler,
     Value,
-    formHandler
   } = props;
 
   return (
     <React.Fragment>
       <input 
-        className="input is-radiusless" 
+        className="input" 
         type={Type}
         name={Name}
-        id={_Id} 
-        placeholder={Placeholder}
         value={Value}
+        id={`mce-${Name}`} 
+        placeholder={Placeholder}
         onChange={formHandler}
       >
       </input>

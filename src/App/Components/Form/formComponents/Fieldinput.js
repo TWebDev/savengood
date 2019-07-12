@@ -38,7 +38,7 @@ const Fieldinput = (props) => {
         </div>
       </div>
     </React.Fragment>
-   );
+  );
 }
- 
+
 export default Fieldinput;
