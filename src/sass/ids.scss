@@ -1,0 +1,13 @@
+#bg-image {
+  z-index: -30;
+  position: fixed;
+}
+
+body {
+  position: relative;
+  z-index: -50;
+  background-color: $primary;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
