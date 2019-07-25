@@ -9333,6 +9333,7 @@ nav.navbar.is-spaced.is-primary div.container div.navbar-menu div.navbar-end div
 
 .title span, .subtitle span {
   font-family: "LoveloLineBold";
+  margin-right: 3px;
 }
 
 div.field label.label {
